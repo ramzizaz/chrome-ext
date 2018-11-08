@@ -3,10 +3,8 @@ window.onload = function() {
 	//Adding CSS to the page in the head of the frame
 	var link = document.createElement('link');
 	link.setAttribute('rel', 'stylesheet');
-	// Temporary link to the css file because it has to be referenced locally by the page or externally
-	link.setAttribute('href', 'https://a.uguu.se/QxB8xshVCkeA_SearchResultPopup.css');
-
-	//<script src="https://a.uguu.se/UUZLk5NG5gbQ_EMpopup.js"></script>
+	// Temporary link to the css file externally
+	link.setAttribute('href', 'https://raw.githubusercontent.com/ramzizaz/chrome-ext/master/css/SearchResultPopup.css');
 
 	// Adding javascript for the popup, can replace with externally hosted file as well
 	var script = document.createElement('script');
@@ -88,7 +86,7 @@ window.onload = function() {
         header.outerHTML = header.outerHTML + div.outerHTML;
     });
 
-    console.log("Ramzi Success!!!");
+    console.log("Success!!!");
 };
 
 
